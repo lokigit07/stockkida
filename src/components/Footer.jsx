@@ -1,67 +1,106 @@
 import React from 'react';
-import { Facebook, Youtube, Instagram, MessageCircle, Mail, Phone } from 'lucide-react';
+import { Facebook, Youtube, Instagram, MessageCircle, Zap, Shield, Rocket, TrendingUp } from 'lucide-react';
 import './Footer.css';
 
 const Footer = () => {
   return (
     <footer className="footer">
       <div className="container">
+        {/* Main Footer Content */}
         <div className="footer-content">
+          {/* Brand Section */}
           <div className="footer-section">
-            <h3>StockKida</h3>
-            <p>Experience seamless trading with zero brokerage, high margins, and instant withdrawals.</p>
+            <div className="brand">
+              <div className="brand-logo">
+                <Zap size={24} />
+                <span>StockKida</span>
+              </div>
+              <p className="brand-tagline">
+                India's fastest growing trading platform with zero brokerage and advanced features
+              </p>
+            </div>
+            
+            <div className="features-grid">
+              <div className="feature">
+                <Shield size={18} />
+                <span>SEBI Regulated</span>
+              </div>
+              <div className="feature">
+                <Rocket size={18} />
+                <span>Instant Withdrawals</span>
+              </div>
+              <div className="feature">
+                <TrendingUp size={18} />
+                <span>500X Margin</span>
+              </div>
+            </div>
+
             <div className="social-links">
-              <a href="#"><Facebook size={20} /></a>
-              <a href="#"><Youtube size={20} /></a>
-              <a href="#"><Instagram size={20} /></a>
-              <a href="#"><MessageCircle size={20} /></a>
+              <a href="#" className="social-link">
+                <Facebook size={20} />
+              </a>
+              <a href="#" className="social-link">
+                <Youtube size={20} />
+              </a>
+              <a href="#" className="social-link">
+                <Instagram size={20} />
+              </a>
+              <a href="#" className="social-link">
+                <MessageCircle size={20} />
+              </a>
             </div>
           </div>
           
+          {/* Trading Section */}
           <div className="footer-section">
-            <h4>Quick Links</h4>
+            <h4>Trading</h4>
+            <ul>
+              <li><a href="#">NSE Equity</a></li>
+              <li><a href="#">Futures & Options</a></li>
+              <li><a href="#">Commodities</a></li>
+              <li><a href="#">Forex Trading</a></li>
+              <li><a href="#">Cryptocurrencies</a></li>
+            </ul>
+          </div>
+          
+          {/* Platforms Section */}
+          <div className="footer-section">
+            <h4>Platforms</h4>
+            <ul>
+              <li><a href="#">Web Platform</a></li>
+              <li><a href="#">Mobile App</a></li>
+              <li><a href="#">Advanced Charts</a></li>
+              <li><a href="#">Trading Tools</a></li>
+              <li><a href="#">API Access</a></li>
+            </ul>
+          </div>
+          
+          {/* Company Section */}
+          <div className="footer-section">
+            <h4>Company</h4>
             <ul>
               <li><a href="#">About Us</a></li>
               <li><a href="#">Why StockKida?</a></li>
               <li><a href="#">Regulations</a></li>
-              <li><a href="#">Terms & Conditions</a></li>
+              <li><a href="#">Security</a></li>
+              <li><a href="#">Careers</a></li>
             </ul>
-          </div>
-          
-          <div className="footer-section">
-            <h4>Markets</h4>
-            <ul>
-              <li><a href="#">NSE (Futures & Options)</a></li>
-              <li><a href="#">Indian Commodity</a></li>
-              <li><a href="#">Forex</a></li>
-              <li><a href="#">US Stocks & Indices</a></li>
-              <li><a href="#">Cryptos</a></li>
-            </ul>
-          </div>
-          
-          <div className="footer-section">
-            <h4>Contact Us</h4>
-            <div className="contact-info">
-              <div className="contact-item">
-                <Phone size={16} />
-                <span>+91 9558644038</span>
-              </div>
-              <div className="contact-item">
-                <Mail size={16} />
-                <span>info@stockkida.com</span>
-              </div>
-            </div>
           </div>
         </div>
         
+        {/* Footer Bottom */}
         <div className="footer-bottom">
           <div className="footer-bottom-content">
-            <p>&copy; 2024 StockKida. All rights reserved.</p>
+            <div className="copyright">
+              <p>&copy; 2024 StockKida. All rights reserved.</p>
+              <span className="regulated">SEBI Regulated Broker</span>
+            </div>
+            
             <div className="footer-links">
               <a href="#">Privacy Policy</a>
-              <a href="#">Cookie Policy</a>
-              <a href="#">Terms & Conditions</a>
+              <a href="#">Terms of Service</a>
               <a href="#">Disclaimer</a>
+              <a href="#">Grievance</a>
             </div>
           </div>
         </div>

@@ -478,3 +478,100 @@ body:has(.mobile-menu.active) {
 html {
   scroll-behavior: smooth;
 }
+
+
+/* Logo Styles */
+.logo {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  position: relative;
+}
+
+.logo-image {
+  height: 40px;
+  width: auto;
+  object-fit: contain;
+}
+
+.logo-fallback {
+  display: none;
+  align-items: center;
+  gap: 12px;
+}
+
+.logo-icon {
+  font-size: 24px;
+}
+
+.logo h2 {
+  background: linear-gradient(135deg, #1BDEA8 0%, #405BFF 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  font-size: 1.5rem;
+  font-weight: 700;
+  margin: 0;
+}
+
+/* Mobile Logo Styles */
+.mobile-logo {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  position: relative;
+}
+
+.mobile-logo-image {
+  height: 35px;
+  width: auto;
+  object-fit: contain;
+}
+
+.mobile-logo-fallback {
+  display: none;
+  align-items: center;
+  gap: 10px;
+}
+
+.mobile-logo h3 {
+  background: linear-gradient(135deg, #1BDEA8 0%, #405BFF 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  font-size: 1.3rem;
+  font-weight: 700;
+  margin: 0;
+}
+
+/* Rest of your existing CSS remains the same */
+.navbar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 1000;
+  background: rgba(18, 24, 39, 0.95);
+  backdrop-filter: blur(20px);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+  transition: all 0.3s ease;
+}
+
+.navbar.scrolled {
+  background: rgba(18, 24, 39, 0.98);
+  border-bottom-color: rgba(255, 255, 255, 0.15);
+}
+
+.nav-container {
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+.nav-content {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 70px;
+}

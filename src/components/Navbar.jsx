@@ -42,8 +42,20 @@ const Navbar = () => {
           <div className="nav-content">
             {/* Logo */}
             <div className="logo">
-              <div className="logo-icon">📈</div>
-              <h2>StockKida</h2>
+              <img 
+                src="/src/image/logo.png" 
+                alt="StockKida Logo" 
+                className="logo-image"
+                onError={(e) => {
+                  // Fallback if image doesn't load
+                  e.target.style.display = 'none';
+                  e.target.nextSibling.style.display = 'flex';
+                }}
+              />
+              <div className="logo-fallback">
+                <div className="logo-icon">📈</div>
+                <h2>StockKida</h2>
+              </div>
             </div>
             
             {/* Desktop Navigation */}
@@ -95,8 +107,20 @@ const Navbar = () => {
         <div className={`mobile-menu ${isMenuOpen ? 'active' : ''}`}>
           <div className="mobile-menu-header">
             <div className="mobile-logo">
-              <div className="logo-icon">📈</div>
-              <h3>StockKida</h3>
+              <img 
+                src="/src/image/logo.png" 
+                alt="StockKida Logo" 
+                className="mobile-logo-image"
+                onError={(e) => {
+                  // Fallback if image doesn't load
+                  e.target.style.display = 'none';
+                  e.target.nextSibling.style.display = 'flex';
+                }}
+              />
+              <div className="mobile-logo-fallback">
+                <div className="logo-icon">📈</div>
+                <h3>StockKida</h3>
+              </div>
             </div>
             <button className="mobile-close" onClick={closeMenu}>
               <X size={24} />

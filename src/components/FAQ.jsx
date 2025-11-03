@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { ChevronDown, ChevronUp, MessageCircle, Zap, Phone, Mail } from 'lucide-react';
+import { ChevronDown, ChevronUp, Zap } from 'lucide-react';
 import './FAQ.css';
 
 const FAQ = () => {
@@ -48,33 +48,6 @@ const FAQ = () => {
     setActiveIndex(activeIndex === index ? null : index);
   };
 
-  const supportOptions = [
-    {
-      icon: <MessageCircle size={24} />,
-      title: "WhatsApp Support",
-      description: "Instant replies within minutes",
-      action: "Chat Now",
-      link: "https://wa.me/919558644038",
-      color: "whatsapp"
-    },
-    {
-      icon: <Phone size={24} />,
-      title: "Phone Support",
-      description: "24/7 helpline available",
-      action: "Call Now",
-      link: "tel:+919558644038",
-      color: "phone"
-    },
-    {
-      icon: <Mail size={24} />,
-      title: "Email Support",
-      description: "Detailed assistance",
-      action: "Email Us",
-      link: "mailto:support@stockkida.com",
-      color: "email"
-    }
-  ];
-
   return (
     <section className="faq" id="faq">
       <div className="container">
@@ -92,85 +65,35 @@ const FAQ = () => {
           </p>
         </div>
 
-        <div className="faq-content">
-          {/* FAQ List */}
-          <div className="faq-main">
-            <div className="faq-list">
-              {faqs.map((faq, index) => (
-                <div 
-                  key={index} 
-                  className={`faq-item ${activeIndex === index ? 'active' : ''}`}
-                >
-                  <div 
-                    className="faq-question" 
-                    onClick={() => toggleFAQ(index)}
-                  >
-                    <div className="question-content">
-                      <span className="question-number">0{index + 1}</span>
-                      <h3>{faq.question}</h3>
-                    </div>
-                    <div className="faq-toggle">
-                      {activeIndex === index ? 
-                        <ChevronUp size={20} /> : 
-                        <ChevronDown size={20} />
-                      }
-                    </div>
-                  </div>
-                  
-                  <div className="faq-answer">
-                    <p>{faq.answer}</p>
-                  </div>
+        {/* FAQ List */}
+        <div className="faq-list">
+          {faqs.map((faq, index) => (
+            <div 
+              key={index} 
+              className={`faq-item ${activeIndex === index ? 'active' : ''}`}
+              style={{ '--index': index }}
+            >
+              <div 
+                className="faq-question" 
+                onClick={() => toggleFAQ(index)}
+              >
+                <div className="question-content">
+                  <span className="question-number">0{index + 1}</span>
+                  <h3>{faq.question}</h3>
                 </div>
-              ))}
-            </div>
-          </div>
-          
-          {/* Support Sidebar */}
-          <div className="faq-sidebar">
-            <div className="support-card">
-              <div className="support-header">
-                <MessageCircle size={32} />
-                <h3>Need More Help?</h3>
-                <p>Our support team is here for you 24/7</p>
+                <div className="faq-toggle">
+                  {activeIndex === index ? 
+                    <ChevronUp size={20} /> : 
+                    <ChevronDown size={20} />
+                  }
+                </div>
               </div>
-
-              <div className="support-options">
-                {supportOptions.map((option, index) => (
-                  <a
-                    key={index}
-                    href={option.link}
-                    className={`support-option ${option.color}`}
-                    target="_blank"
-                    rel="noopener noreferrer"
-                  >
-                    <div className="option-icon">
-                      {option.icon}
-                    </div>
-                    <div className="option-content">
-                      <h4>{option.title}</h4>
-                      <p>{option.description}</p>
-                    </div>
-                    <span className="option-action">{option.action}</span>
-                  </a>
-                ))}
-              </div>
-
-              <div className="support-stats">
-                <div className="stat">
-                  <div className="stat-value">24/7</div>
-                  <div className="stat-label">Support</div>
-                </div>
-                <div className="stat">
-                  <div className="stat-value">2min</div>
-                  <div className="stat-label">Avg Response</div>
-                </div>
-                <div className="stat">
-                  <div className="stat-value">98%</div>
-                  <div className="stat-label">Satisfaction</div>
-                </div>
+              
+              <div className="faq-answer">
+                <p>{faq.answer}</p>
               </div>
             </div>
-          </div>
+          ))}
         </div>
       </div>
     </section>
