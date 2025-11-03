@@ -1,0 +1,468 @@
+/* ===== PLATFORM SECTION ===== */
+.platform {
+  padding: 80px 0;
+  background: #121827;
+  position: relative;
+}
+
+.platform::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 1px;
+  background: linear-gradient(90deg, transparent, #405BFF, transparent);
+}
+
+.container {
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 16px;
+}
+
+/* ===== PLATFORM CONTENT ===== */
+.platform-content {
+  display: flex;
+  flex-direction: column;
+  gap: 60px;
+}
+
+/* ===== TEXT CONTENT ===== */
+.platform-text {
+  text-align: center;
+}
+
+.platform-badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  background: #405BFF;
+  color: #FFFFFF;
+  padding: 8px 16px;
+  border-radius: 20px;
+  font-size: 0.9rem;
+  font-weight: 600;
+  margin-bottom: 20px;
+}
+
+.platform-title {
+  font-size: 2.5rem;
+  font-weight: 700;
+  color: #FFFFFF;
+  line-height: 1.1;
+  margin-bottom: 16px;
+}
+
+.accent {
+  color: #1BDEA8;
+}
+
+.platform-description {
+  font-size: 1.1rem;
+  color: #B0B8C4;
+  line-height: 1.5;
+  max-width: 600px;
+  margin: 0 auto 40px;
+}
+
+/* ===== APP STATS ===== */
+.app-stats {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 16px;
+  margin-bottom: 40px;
+}
+
+.stat-item {
+  background: #1E2537;
+  border: 1px solid #2A3245;
+  border-radius: 12px;
+  padding: 20px;
+  text-align: center;
+  transition: all 0.3s ease;
+}
+
+.stat-item:hover {
+  border-color: #405BFF;
+  transform: translateY(-2px);
+}
+
+.stat-value {
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: #1BDEA8;
+  margin-bottom: 4px;
+  line-height: 1;
+}
+
+.stat-label {
+  font-size: 0.85rem;
+  color: #B0B8C4;
+  font-weight: 500;
+}
+
+/* ===== DOWNLOAD SECTION ===== */
+.download-section {
+  margin-top: 40px;
+}
+
+.download-title {
+  font-size: 1.3rem;
+  font-weight: 600;
+  color: #FFFFFF;
+  margin-bottom: 16px;
+}
+
+.download-buttons {
+  display: flex;
+  gap: 12px;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.download-btn {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  background: #1E2537;
+  padding: 16px 20px;
+  border-radius: 12px;
+  text-decoration: none;
+  color: #FFFFFF;
+  transition: all 0.3s ease;
+  border: 1px solid #2A3245;
+  min-width: 180px;
+}
+
+.download-btn:hover {
+  transform: translateY(-2px);
+  border-color: #405BFF;
+}
+
+.download-btn.play-store:hover {
+  background: #1BDEA8;
+  border-color: #1BDEA8;
+}
+
+.download-btn.app-store:hover {
+  background: #405BFF;
+  border-color: #405BFF;
+}
+
+.btn-icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 32px;
+  height: 32px;
+}
+
+.btn-text {
+  display: flex;
+  flex-direction: column;
+  text-align: left;
+}
+
+.btn-text span {
+  font-size: 0.8rem;
+  color: #B0B8C4;
+}
+
+.btn-text strong {
+  font-size: 1rem;
+  font-weight: 600;
+}
+
+/* ===== PLATFORM VISUAL ===== */
+.platform-visual {
+  display: flex;
+  justify-content: center;
+}
+
+.platform-showcase {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 30px;
+  max-width: 400px;
+  width: 100%;
+}
+
+/* Phone Mockup */
+.phone-mockup {
+  width: 200px;
+  height: 400px;
+  background: #1E2537;
+  border: 1px solid #2A3245;
+  border-radius: 30px;
+  padding: 12px;
+  position: relative;
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.3);
+}
+
+.phone-screen {
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(135deg, #1a2238, #121827);
+  border-radius: 24px;
+  overflow: hidden;
+  padding: 20px 16px;
+  display: flex;
+  flex-direction: column;
+}
+
+.app-interface {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+}
+
+.app-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.app-name {
+  color: #1BDEA8;
+  font-weight: 700;
+  font-size: 0.9rem;
+}
+
+.battery {
+  color: #1BDEA8;
+  font-size: 0.8rem;
+  font-weight: 600;
+}
+
+.price-chart {
+  flex: 1;
+  background: rgba(30, 37, 55, 0.5);
+  border-radius: 12px;
+  margin-bottom: 20px;
+  position: relative;
+  overflow: hidden;
+}
+
+.chart-line.up {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 80%;
+  background: linear-gradient(to top, #1BDEA8, transparent);
+  clip-path: polygon(0% 100%, 10% 80%, 20% 90%, 30% 70%, 40% 85%, 50% 60%, 60% 75%, 70% 50%, 80% 65%, 90% 40%, 100% 55%, 100% 100%);
+}
+
+.quick-actions {
+  display: flex;
+  gap: 10px;
+}
+
+.action-buy, .action-sell {
+  flex: 1;
+  padding: 10px;
+  border: none;
+  border-radius: 8px;
+  font-weight: 600;
+  font-size: 0.9rem;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.action-buy {
+  background: #1BDEA8;
+  color: #121827;
+}
+
+.action-sell {
+  background: #FF6B6B;
+  color: #FFFFFF;
+}
+
+.action-buy:hover, .action-sell:hover {
+  transform: translateY(-1px);
+}
+
+/* Platform Cards */
+.platform-cards {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  width: 100%;
+}
+
+.platform-card {
+  background: #1E2537;
+  border: 1px solid #2A3245;
+  border-radius: 12px;
+  padding: 20px;
+  display: flex;
+  align-items: flex-start;
+  gap: 16px;
+  transition: all 0.3s ease;
+}
+
+.platform-card:hover {
+  border-color: #405BFF;
+  transform: translateY(-2px);
+}
+
+.card-icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 48px;
+  height: 48px;
+  border-radius: 10px;
+  background: #2A3245;
+  flex-shrink: 0;
+  transition: all 0.3s ease;
+}
+
+.platform-card:hover .card-icon {
+  background: #405BFF;
+}
+
+.platform-mobile .card-icon { color: #1BDEA8; }
+.platform-desktop .card-icon { color: #405BFF; }
+.platform-web .card-icon { color: #FFD93D; }
+
+.card-content {
+  flex: 1;
+}
+
+.card-content h4 {
+  font-size: 1.1rem;
+  font-weight: 600;
+  color: #FFFFFF;
+  margin-bottom: 4px;
+}
+
+.card-content p {
+  font-size: 0.9rem;
+  color: #B0B8C4;
+  margin-bottom: 8px;
+  line-height: 1.4;
+}
+
+.platform-features {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px;
+}
+
+.feature-tag {
+  background: rgba(64, 91, 255, 0.1);
+  color: #405BFF;
+  padding: 4px 8px;
+  border-radius: 6px;
+  font-size: 0.75rem;
+  font-weight: 500;
+  border: 1px solid rgba(64, 91, 255, 0.2);
+}
+
+/* ===== DESKTOP STYLES ===== */
+@media (min-width: 768px) {
+  .platform-content {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 80px;
+    align-items: center;
+  }
+
+  .platform-text {
+    text-align: left;
+  }
+
+  .platform-description {
+    margin-left: 0;
+    margin-right: 0;
+  }
+
+  .download-buttons {
+    justify-content: flex-start;
+  }
+
+  .app-stats {
+    grid-template-columns: repeat(4, 1fr);
+  }
+
+  .platform-showcase {
+    max-width: 500px;
+  }
+
+  .phone-mockup {
+    width: 240px;
+    height: 480px;
+  }
+}
+
+@media (min-width: 1024px) {
+  .platform {
+    padding: 100px 0;
+  }
+
+  .platform-title {
+    font-size: 3rem;
+  }
+}
+
+/* ===== MOBILE OPTIMIZATION ===== */
+@media (max-width: 480px) {
+  .platform {
+    padding: 60px 0;
+  }
+
+  .platform-title {
+    font-size: 2rem;
+  }
+
+  .app-stats {
+    grid-template-columns: 1fr;
+    gap: 12px;
+  }
+
+  .download-buttons {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .download-btn {
+    width: 100%;
+    max-width: 250px;
+    justify-content: center;
+  }
+
+  .platform-card {
+    flex-direction: column;
+    text-align: center;
+    gap: 12px;
+  }
+
+  .card-icon {
+    align-self: center;
+  }
+
+  .platform-features {
+    justify-content: center;
+  }
+}
+
+/* Animation for stats */
+.stat-item {
+  animation: fadeInUp 0.6s ease-out forwards;
+  animation-delay: calc(var(--index, 0) * 100ms);
+  opacity: 0;
+  transform: translateY(20px);
+}
+
+@keyframes fadeInUp {
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
