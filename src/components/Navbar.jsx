@@ -43,7 +43,7 @@ const Navbar = () => {
             {/* Logo */}
             <div className="logo">
               <img 
-                src="/src/image/logo.png" 
+                src="/image/logo.png" 
                 alt="StockKida Logo" 
                 className="logo-image"
                 onError={(e) => {
@@ -108,7 +108,7 @@ const Navbar = () => {
           <div className="mobile-menu-header">
             <div className="mobile-logo">
               <img 
-                src="/src/image/logo.png" 
+                src="/image/logo.png" 
                 alt="StockKida Logo" 
                 className="mobile-logo-image"
                 onError={(e) => {
