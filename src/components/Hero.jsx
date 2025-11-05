@@ -53,12 +53,6 @@ const Hero = () => {
             <div className="trust-indicators">
               <div className="trust-item">
                 <div className="trust-icon">
-                  <Shield size={20} />
-                </div>
-                <span>Regulated Broker</span>
-              </div>
-              <div className="trust-item">
-                <div className="trust-icon">
                   <Clock size={20} />
                 </div>
                 <span>24/7 Support</span>

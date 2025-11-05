@@ -4,7 +4,6 @@ import Hero from './components/Hero';
 import Features from './components/Features';
 import Markets from './components/Markets';
 import WhyChooseUs from './components/WhyChooseUs';
-import Platform from './components/Platform';
 import Stats from './components/Stats';
 import Testimonials from './components/Testimonials';
 import FAQ from './components/FAQ';
@@ -19,7 +18,6 @@ function App() {
       <Features />
       <Markets />
       <WhyChooseUs />
-      <Platform />
       <Stats />
       <Testimonials />
       <FAQ />

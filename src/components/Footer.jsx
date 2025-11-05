@@ -1,5 +1,5 @@
 import React from 'react';
-import { Facebook, Youtube, Instagram, MessageCircle, Zap, Shield, Rocket, TrendingUp } from 'lucide-react';
+import { Facebook, Youtube, Instagram, MessageCircle, Zap, Rocket, TrendingUp } from 'lucide-react';
 import './Footer.css';
 
 const Footer = () => {
@@ -21,10 +21,6 @@ const Footer = () => {
             </div>
             
             <div className="features-grid">
-              <div className="feature">
-                <Shield size={18} />
-                <span>SEBI Regulated</span>
-              </div>
               <div className="feature">
                 <Rocket size={18} />
                 <span>Instant Withdrawals</span>
@@ -93,7 +89,6 @@ const Footer = () => {
           <div className="footer-bottom-content">
             <div className="copyright">
               <p>&copy; 2024 StockKida. All rights reserved.</p>
-              <span className="regulated">SEBI Regulated Broker</span>
             </div>
             
             <div className="footer-links">
