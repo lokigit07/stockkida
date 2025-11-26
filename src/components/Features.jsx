@@ -19,7 +19,7 @@ const Features = () => {
     {
       icon: <Shield size={28} />,
       title: "Regulated Platform",
-      description: "SEBI-regulated platform ensuring complete security",
+      description: "International regulated platform ensuring complete security",
       gradient: "gradient-3"
     },
     {
