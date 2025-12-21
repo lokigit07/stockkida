@@ -41,7 +41,7 @@ const Hero = () => {
                 </div>
               </a>
               
-              <a href="#download" className="cta-btn secondary">
+              <a href="https://www.dropbox.com/scl/fi/07ami8s0j6fiazpdzumen/stockkida.apk?rlkey=kqftxnru4gomzvoqzzj9qk2ot&st=svt7lf9x&dl=0" className="cta-btn secondary">
                 <div className="btn-content">
                   <Download size={20} />
                   <span>Download App</span>

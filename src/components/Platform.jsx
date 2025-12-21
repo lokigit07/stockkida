@@ -68,7 +68,7 @@ const Platform = () => {
             <div className="download-section">
               <h3 className="download-title">Download Now</h3>
               <div className="download-buttons">
-                <a href="#" className="download-btn play-store">
+                <a href="https://www.dropbox.com/scl/fi/07ami8s0j6fiazpdzumen/stockkida.apk?rlkey=kqftxnru4gomzvoqzzj9qk2ot&st=svt7lf9x&dl=0" className="download-btn play-store">
                   <div className="btn-icon">
                     <Play size={20} />
                   </div>
