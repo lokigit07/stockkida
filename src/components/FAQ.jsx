@@ -32,7 +32,7 @@ const FAQ = () => {
     },
     {
       question: "Is my money safe with StockKida?",
-      answer: "Absolutely. We are a SEBI-regulated broker with bank-grade security. Your funds are kept in separate bank accounts, and all data is encrypted with advanced security protocols."
+      answer: "Absolutely. We follow strict security standards with bank-grade protection. Your funds are kept in separate, secure bank accounts, and all user data is protected using advanced encryption and security protocols to ensure complete safety and privacy."
     },
     {
       question: "What is 500X margin?",
